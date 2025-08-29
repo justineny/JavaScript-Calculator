@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 206, 198);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: hsl(207, 11%, 56%);
+}
+
+.calculator {
+    max-width: 30rem;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#display {
+    background-color: hsl(150, 2%, 67%);
+    color: white;
+    font-size: 4rem;
+    border: none;
+    padding: 2rem;
+    width: 100%;
+}
+
+.all-btns {
+    background-color:rgb(139, 139, 136);
+    text-align: center;
+    padding: 15px 5px 10px 5px;
+}
+
+button { 
+    background-color: rgb(79, 104, 89);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    margin: 3px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all .1s ease-out;
+}
+
+button:hover {  
+    background-color:  rgb(95, 124, 90);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+
+.right-side {
+    background-color: rgb(197, 171, 134);
+}
+
+.right-side:hover {
+    background-color: rgb(151, 137, 117);
+}
+
+.top-row {
+    background-color: rgb(105, 86, 66);
+}
+
+.top-row:hover {
+   background-color: rgb(124, 112, 95);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        padding: 1rem;
+    }
+
+    .calculator {
+        display: grid;
+        max-width: 25rem;
+        height: 35rem;
+    }
+
+    .all-btns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    button {
+        width: 71px;
+        height: 71px;
+        margin: 5px;
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .calculator {
+        display: grid;
+        max-width: 17rem;
+        height: 27rem;
+    }
+
+    #display {
+        font-size: 2.3rem;
+    }
+
+    .all-btns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 295px) {
+
+    h1 {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .calculator {
+        display: grid;
+        max-width: 12rem;
+        height: 25rem;
+    }
+
+    #display {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .all-btns {
+       display: grid;
+    }
+
+    button {
+        width: 41px;
+        height: 41px;
+        margin: 2px;
+        font-size: 1.3rem;
+    }
+}

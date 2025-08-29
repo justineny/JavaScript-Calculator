@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Javascript Calculator</h1>
+  
+    <div class="calculator">
+        
+        <input id="display" readonly>
+        
+
+        <div class="all-btns">
+            <!-- top row -->
+            <button class="top-row" onclick="clearDisplay()">C</button>
+            <button class="top-row" onclick="positiveOrNegative()">+/-</button>
+            <button class="top-row">%</button>
+            <button class="right-side" onclick="addToDisplay('/')">&divide;</button>
+            <!-- second row -->
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button class="right-side" onclick="addToDisplay('*')">&times;</button>
+            <!-- third row -->
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button class="right-side" onclick="addToDisplay('-')">&minus;</button>
+            <!-- fourth row -->
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button class="right-side" onclick="addToDisplay('+')">&plus;</button>
+            <!-- fifth row -->
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="addToDisplay('.')">.</button>
+            <button class="top-row" onclick="remove()">&larr;</button>
+            <button class="right-side" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
